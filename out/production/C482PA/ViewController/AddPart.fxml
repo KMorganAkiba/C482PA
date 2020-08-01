@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewController.AddPart">
+   <children>
+      <Button fx:id="addPartSaveButton" layoutX="138.0" layoutY="359.0" mnemonicParsing="false" onAction="#addPartSaveButton" text="Save">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="addPartCancelButton" layoutX="197.5" layoutY="359.0" mnemonicParsing="false" onMouseClicked="#addPartCancelButton" text="Cancel">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="23.0" layoutY="27.0" text="Add Part">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="107.0" text="ID">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Label>
+      <Label layoutX="35.0" layoutY="147.0" text="Name">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Label>
+      <Label layoutX="35.0" layoutY="187.0" text="Inv">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Label>
+      <Label layoutX="35.0" layoutY="227.0" text="Price/Cost">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Label>
+      <Label layoutX="35.0" layoutY="267.0" text="Max">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Label>
+      <Label layoutX="235.0" layoutY="267.0" text="Min">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Label>
+      <Label fx:id="companyNameLabel" layoutX="35.0" layoutY="307.0" text="Company Name">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Label>
+      <RadioButton fx:id="addPartInHouse" layoutX="101.0" layoutY="62.0" mnemonicParsing="false" onAction="#addPartInHouse" text="In-House">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="addPartOutSource" layoutX="217.0" layoutY="62.0" mnemonicParsing="false" onAction="#addPartOutsource" text="Outsourced">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </RadioButton>
+      <TextField fx:id="partIDTxtbox" layoutX="145.0" layoutY="100.0" prefHeight="30.0" prefWidth="100.0" promptText="ID# Auto Gen" disable="true" />
+      <TextField fx:id="partNameTxtbox" layoutX="145.0" layoutY="140.0" prefHeight="30.0" prefWidth="100.0" promptText="Part Name" />
+      <TextField fx:id="invTxtbox" layoutX="145.0" layoutY="180.0" prefHeight="30.0" prefWidth="100.0" promptText="Inventory" />
+      <TextField fx:id="pricePerUnitTxtbox" layoutX="145.0" layoutY="220.0" prefHeight="30.0" prefWidth="100.0" promptText="Price per Unit" />
+      <TextField fx:id="maxQtyTxtbox" layoutX="145.0" layoutY="260.0" prefHeight="30.0" prefWidth="75.0" promptText="Max" />
+      <TextField fx:id="minQtyTxtbox" layoutX="270.0" layoutY="260.0" prefHeight="30.0" prefWidth="75.0" promptText="Min" />
+      <TextField fx:id="companyNamePrompt" layoutX="145.0" layoutY="300.0" prefHeight="30.0" prefWidth="100.0" promptText="Comp NM" />
+   </children>
+</AnchorPane>

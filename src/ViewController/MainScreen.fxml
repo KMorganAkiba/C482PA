@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewController.MainScreen">
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <Label layoutX="14.0" layoutY="14.0" text="Inventory Management System ">
+      <font>
+         <Font name="Arial Bold" size="16.0" />
+      </font>
+   </Label>
+   <Button fx:id="closeSystemButton" layoutX="730.0" layoutY="356.0" mnemonicParsing="false" onMouseClicked="#closeSystemButton" text="Close">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Button>
+   <AnchorPane layoutX="14.0" layoutY="75.0" prefHeight="250.0" prefWidth="380.0" style="-fx-border-radius: 20; -fx-border-color: grey;">
+      <children>
+         <Label layoutX="11.0" layoutY="19.0" text="Parts">
+            <font>
+               <Font name="Arial Bold" size="16.0" />
+            </font>
+         </Label>
+         <Button fx:id="partsSearchButton" layoutX="151.0" layoutY="18.0" mnemonicParsing="false" onMouseClicked="#partsSearchButton" prefWidth="60.0" text="Search">
+            <font>
+               <Font name="Arial Bold" size="12.0" />
+            </font>
+         </Button>
+         <TextField fx:id="partSearchTxtbox" layoutX="216.0" layoutY="18.0" />
+         <Button fx:id="partsAddButton" layoutX="191.0" layoutY="211.0" mnemonicParsing="false" onMouseClicked="#partsAddButton" text="Add">
+            <font>
+               <Font name="Arial Bold" size="12.0" />
+            </font>
+         </Button>
+         <Button fx:id="partsModifyButton" layoutX="244.0" layoutY="211.0" mnemonicParsing="false" onMouseClicked="#partsModifyButton" text="Modify">
+            <font>
+               <Font name="Arial Bold" size="12.0" />
+            </font>
+         </Button>
+         <Button fx:id="partsDeleteButton" layoutX="312.0" layoutY="211.0" mnemonicParsing="false" onMouseClicked="#partsDeleteButton" text="Delete">
+            <font>
+               <Font name="Arial Bold" size="12.0" />
+            </font>
+         </Button>
+         <TableView fx:id="partsTableView" layoutX="11.0" layoutY="50.0" prefHeight="150.0" prefWidth="360.0">
+            <columns>
+               <TableColumn fx:id="partIDColumn" prefWidth="66.0" text="Part ID" />
+               <TableColumn fx:id="partNameColumn" prefWidth="82.0" text="Part Name" />
+               <TableColumn fx:id="partInventoryColumn" prefWidth="93.0" text="Inventory Level" />
+               <TableColumn fx:id="partCostColumn" prefWidth="116.0" text="Price/Cost per Unit" />
+            </columns>
+         </TableView>
+      </children>
+   </AnchorPane>
+   <AnchorPane layoutX="406.0" layoutY="75.0" prefHeight="250.0" prefWidth="380.0" style="-fx-border-radius: 20px; -fx-border-color: grey;">
+      <children>
+         <Label layoutX="11.0" layoutY="19.0" text="Products">
+            <font>
+               <Font name="Arial Bold" size="16.0" />
+            </font>
+         </Label>
+         <Button fx:id="productsSearchButton" layoutX="151.0" layoutY="18.0" mnemonicParsing="false" onMouseClicked="#productsSearchButton" prefWidth="60.0" text="Search ">
+            <font>
+               <Font name="Arial Bold" size="12.0" />
+            </font>
+         </Button>
+         <TextField fx:id="productSearchTxtbox" layoutX="216.0" layoutY="18.0" />
+         <Button fx:id="productsAddButton" layoutX="191.0" layoutY="211.0" mnemonicParsing="false" onMouseClicked="#productsAddButton" text="Add">
+            <font>
+               <Font name="Arial Bold" size="12.0" />
+            </font>
+         </Button>
+         <Button fx:id="productsModifyButton" layoutX="244.0" layoutY="211.0" mnemonicParsing="false" onMouseClicked="#productsModifyButton" text="Modify">
+            <font>
+               <Font name="Arial Bold" size="12.0" />
+            </font>
+         </Button>
+         <Button fx:id="productsDeleteButton" layoutX="312.0" layoutY="211.0" mnemonicParsing="false" onMouseClicked="#productsDeleteButton" text="Delete">
+            <font>
+               <Font name="Arial Bold" size="12.0" />
+            </font>
+         </Button>
+         <TableView fx:id="productTableView" layoutX="10.0" layoutY="50.0" prefHeight="150.0" prefWidth="360.0">
+            <columns>
+               <TableColumn fx:id="productIDColumn" prefWidth="71.0" text="Product ID" />
+               <TableColumn fx:id="productNameColumn" prefWidth="96.0" text="Product Name" />
+               <TableColumn fx:id="productInventoryColumn" prefWidth="100.0" text="Inventory Level" />
+               <TableColumn fx:id="productPriceColumn" prefWidth="91.0" text="Price per Unit" />
+            </columns>
+         </TableView>
+      </children>
+   </AnchorPane>
+</AnchorPane>

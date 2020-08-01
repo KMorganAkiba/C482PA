@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewController.ModifyProduct">
+   <children>
+      <Label layoutX="30.0" layoutY="35.0" text="Modify Product">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="143.0" text="ID">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="183.0" text="Name">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="223.0" text="Inv">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="263.0" text="Price">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="200.0" layoutY="303.0" text="Min">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="303.0" text="Max">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="modifyProductPartAddTable" layoutX="420.0" layoutY="68.0" prefHeight="150.0" prefWidth="360.0">
+        <columns>
+          <TableColumn fx:id="modifyProductAddPartIDColumn" prefWidth="75.0" text="Part ID" />
+          <TableColumn fx:id="modifyProductAddPartNameColumn" prefWidth="75.0" text="Part Name" />
+            <TableColumn fx:id="modifyProductAddPartInvColumn" prefWidth="75.0" text="Inventory Level" />
+            <TableColumn fx:id="modifyProductAddPartPriceColumn" prefWidth="75.0" text="Price per Unit" />
+        </columns>
+      </TableView>
+      <TableView fx:id="modifyProductPartTable" layoutX="420.0" layoutY="262.0" prefHeight="150.0" prefWidth="360.0">
+        <columns>
+          <TableColumn fx:id="modifyProductPartIDColumn" prefWidth="75.0" text="Part ID" />
+          <TableColumn fx:id="modifyProductPartNameColumn" prefWidth="75.0" text="Part Name" />
+            <TableColumn fx:id="modifyProductPartInvColumn" prefWidth="75.0" text="Inventory Level" />
+            <TableColumn fx:id="modifyProductPartPriceColumn" prefWidth="75.0" text="Price Per Unit " />
+        </columns>
+      </TableView>
+      <TextField fx:id="modifyProductMaxTxt" layoutX="100.0" layoutY="303.0" prefWidth="75.0" />
+      <TextField fx:id="modifyProductMinTxt" layoutX="245.0" layoutY="303.0" prefWidth="75.0" />
+      <TextField fx:id="modifyProductPriceTxt" layoutX="100.0" layoutY="263.0" prefWidth="75.0" />
+      <TextField fx:id="modifyProductInvTxt" layoutX="100.0" layoutY="223.0" prefWidth="75.0" />
+      <TextField fx:id="modifyProductNameTxt" layoutX="100.0" layoutY="183.0" prefWidth="100.0" />
+      <TextField fx:id="modifyProductIDTxt" layoutX="100.0" layoutY="143.0" prefWidth="100.0" />
+      <TextField fx:id="modifyProductSearchTxt" layoutX="493.0" layoutY="33.0" />
+      <Button fx:id="modifyProductSearchButton" layoutX="420.0" layoutY="33.0" mnemonicParsing="false" onMouseClicked="#modifyProductSearchButton" text="Search">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="ModifyDeleteProductButton" layoutX="727.0" layoutY="420.0" mnemonicParsing="false" onMouseClicked="#ModifyDeleteProductButton" text="Delete">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="modifyCancelProductButton" layoutX="726.0" layoutY="455.0" mnemonicParsing="false" onMouseClicked="#modifyCancelProductButton" text="Cancel">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="modifySaveProductButton" layoutX="672.0" layoutY="455.0" mnemonicParsing="false" onMouseClicked="#modifySaveProductButton" text="Save">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="modifyAddProductButton" layoutX="739.0" layoutY="227.0" mnemonicParsing="false" onMouseClicked="#modifyAddProductButton" text="Add">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
